@@ -8,9 +8,14 @@ private:
   string name;
 
 public:
-  Cat()
+  /* Cat()
+   {
+     cout << "Hello from default constructor" << endl;
+  } */
+
+  Cat(string name = "Monshin") : name(name)
   {
-    cout << "Hello from default constructor" << endl;
+    cout << "Hello from Cat(string)" << endl;
   }
 
   void bark()
